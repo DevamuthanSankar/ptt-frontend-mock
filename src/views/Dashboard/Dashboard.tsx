@@ -1,15 +1,13 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import {Outlet} from 'react-router-dom';
+import Navbar from "../../components/Navbar";
 
-class Dashboard extends React.Component {
-    render() {
-        return (
-            <div>
-                Dashboard Page
-                <Outlet />
-            </div>
-        );
-    }
-}
+export default function Dashboard() {
 
-export default Dashboard;
+    return (
+        <div className={'h-full w-full flex flex-col'}>
+            <Navbar />
+            <Outlet />
+        </div>
+    );
+};
