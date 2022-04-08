@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ptt-frontend-mock/static/css/main.2c70c94d.css",
-    "main.js": "/ptt-frontend-mock/static/js/main.0aa9c111.js",
+    "main.js": "/ptt-frontend-mock/static/js/main.c9a430cf.js",
     "static/js/787.221215bf.chunk.js": "/ptt-frontend-mock/static/js/787.221215bf.chunk.js",
     "index.html": "/ptt-frontend-mock/index.html",
     "main.2c70c94d.css.map": "/ptt-frontend-mock/static/css/main.2c70c94d.css.map",
-    "main.0aa9c111.js.map": "/ptt-frontend-mock/static/js/main.0aa9c111.js.map",
+    "main.c9a430cf.js.map": "/ptt-frontend-mock/static/js/main.c9a430cf.js.map",
     "787.221215bf.chunk.js.map": "/ptt-frontend-mock/static/js/787.221215bf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2c70c94d.css",
-    "static/js/main.0aa9c111.js"
+    "static/js/main.c9a430cf.js"
   ]
 }
