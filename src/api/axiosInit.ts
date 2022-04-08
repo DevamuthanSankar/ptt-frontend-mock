@@ -2,7 +2,7 @@ import axios, { AxiosError, AxiosResponse} from "axios";
 
 export function axiosInit() {
 
-    axios.defaults.baseURL = process.env.REACT_APP_API_URL;
+    axios.defaults.baseURL = process.env.REACT_APP_API_URL || 'https://reqres.in/';
 
     const requestHandler = (request:any) => {
         return request;

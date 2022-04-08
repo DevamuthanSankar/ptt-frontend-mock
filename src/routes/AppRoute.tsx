@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
+import {Routes, Route, Navigate, HashRouter} from 'react-router-dom';
 
 import Login from '../views/Login';
 import Signup from '../views/Signup';
@@ -9,10 +9,13 @@ import Home from '../views/Dashboard/Home';
 import ViewUser from '../views/Dashboard/ViewUser';
 import AuthGuard from "./AuthGuard";
 
+import Page404 from "../views/Page404";
+
 export default class AppRoute extends React.Component {
+    baseUrl = process.env.REACT_APP_API_URL || 'https://reqres.in/'
     render() {
         return (
-            <BrowserRouter>
+            <HashRouter basename={'https://DevamuthanSankar.github.io/ptt-frontend-mock/'}>
                 <Routes>
                     <Route path={'/'} element={<Navigate replace to={'/login'}/>}/>
                     <Route path={'login'} element={<Login/>}/>
@@ -23,8 +26,9 @@ export default class AppRoute extends React.Component {
                             <Route path={'user'} element={<ViewUser/>}/>
                         </Route>
                     </Route>
+                    <Route path={'*'} element={<Page404 />} />
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
         );
     }
 }

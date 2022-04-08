@@ -2,7 +2,7 @@
   "name": "ptt-frontend-mock",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://devamuthansankar.github.io/",
+  "homepage": "https://DevamuthanSankar.github.io/ptt-frontend-mock/",
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.8",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
